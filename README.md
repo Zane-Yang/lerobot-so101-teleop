@@ -38,16 +38,16 @@
 A complete robotics **data-driven control loop on a real manipulator**, with **no leader arm required**:
 
 ```
-┌────────────┐   keyboard / gamepad    ┌──────────────────┐
-│  Operator  │ ──────────────────────▶ │ Teleoperation     │
-└────────────┘                          │ (leader-less)     │
+┌────────────┐   keyboard / gamepad     ┌──────────────────┐
+│  Operator  │ ──────────────────────▶ │ Teleoperation    │
+└────────────┘                          │ (leader-less)    │
                                         └──────────────────┘
                                                   │ actions
                                                   ▼
-┌────────────┐   states/images          ┌──────────────────┐
-│  SO-101    │ ◀────────────────────── │ LeRobot pipeline  │
-│ follower   │ ──────────────────────▶ │ (record/train/eval)│
-└────────────┘   obs.images.front,      └──────────────────┘
+┌────────────┐   states/images          ┌─────────────────────┐
+│  SO-101    │ ◀────────────────────── │ LeRobot pipeline    │
+│ follower   │ ──────────────────────▶ │ (record/train/eval) │
+└────────────┘   obs.images.front,      └─────────────────────┘
                  obs.state (6 joints)
 ```
 
