@@ -36,15 +36,15 @@ A complete robotics **data-driven control loop on a real manipulator**, with **n
 
 ```
 ┌────────────┐   keyboard / gamepad    ┌──────────────────┐
-│  Operator  │ ──────────────────────▶ │ Teleoperation     │
-└────────────┘                          │ (leader-less)     │
-                                        └──────────────────┘
+│  Operator  │ ──────────────────────▶ │ Teleoperation    │
+└────────────┘                         │ (leader-less)    │
+                                       └──────────────────┘
                                                   │ actions
                                                   ▼
-┌────────────┐   states/images          ┌──────────────────┐
-│  SO-101    │ ◀────────────────────── │ LeRobot pipeline  │
-│ follower   │ ──────────────────────▶ │ (record/train/eval)│
-└────────────┘   obs.images.front,      └──────────────────┘
+┌────────────┐   states/images         ┌─────────────────────┐
+│  SO-101    │ ◀────────────────────── │ LeRobot pipeline    │
+│ follower   │ ──────────────────────▶ │ (record/train/eval) │
+└────────────┘   obs.images.front,     └─────────────────────┘
                  obs.state (6 joints)
 ```
 
