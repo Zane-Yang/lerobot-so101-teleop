@@ -1,10 +1,35 @@
 # 🤖 LeRobot × SO-101: Teleoperation → Imitation Learning → Real-Robot Deployment
 
-> A **hand-on, end-to-end real-world robotics IA project** bridging Hugging Face [LeRobot](https://github.com/huggingface/lerobot), a low-cost **SO-101** follower arm (Feetech STS3215 × 6), and **self-developed leader-less teleoperation**, trained with **ACT**, and deployed **on the real robot** to pick a wrapped candy and place it into a lid.
+<div align="center">
+
+🌐 **English** · [**中文**](README.zh-CN.md)
+
+</div>
+
+> An **end-to-end, real-world robotics** project bridging Hugging Face [LeRobot](https://github.com/huggingface/lerobot), a low-cost **SO-101** follower arm (Feetech STS3215 × 6), and **self-developed leader-less teleoperation**, trained with **ACT**, and deployed **on the real robot** to pick a wrapped candy and place it into a lid.
 
 [![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-Apache--2.0-blue)](LICENSE)
 [![HF LeRobot](https://img.shields.io/badge/based_on-HuggingFace%20LeRobot-yellow)](https://github.com/huggingface/lerobot)
+
+---
+
+## 🎬 Demo
+
+<p align="center">
+  <img src="media/demo.gif" alt="Real-robot candy pick-and-place demo" width="480"><br/>
+  <i>Autonomous ACT inference on the real end-effector: pick & place (GIF preview)</i>
+</p>
+
+<details open>
+<summary>▶️ Play the full MP4 inline (HTML5 / GitHub)</summary>
+
+<video src="media/demo.mp4" controls width="480" autoplay loop muted playsinline></video>
+
+</details>
+
+> ✔️ `media/demo.mp4` is playable directly on this page — no download needed.
+> ✔️ `media/demo.gif` is a lightweight animated preview for the repository cover.
 
 ---
 
@@ -34,16 +59,6 @@ A complete robotics **data-driven control loop on a real manipulator**, with **n
 | 🎯 Deployment | Real-robot evaluation via LeRobot **rollout**, with recorded demos |
 
 **Why it is interesting even with limited hardware:** the full stack runs on a **single laptop with an RTX 3060 (6 GB VRAM)** — from raw teleoperation data to a policy that physically moves the arm.
-
----
-
-## 🎬 Demo & Media
-
-| Media | Description |
-|-------|-------------|
-| [`demo.mp4`](media/demo.mp4) | Real-robot inference: the ACT policy **autonomously** picks the candy and places it into the lid |
-
-> Some demos are also exported with the auxiliary joint curves overlay — see [`examples`](examples/).
 
 ---
 
