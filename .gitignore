@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# LeRobot large artifacts (never commit into GitHub)
+.datasets/
+checkpoints/
+*.safetensors
+*.parquet
+*.mp4.rrd
+
+# Local experiment / training output
+output/
+pretrained_model/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Backups (if accidentally copied from source workspace)
+.backup_*/

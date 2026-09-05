@@ -1,0 +1,8 @@
+# Extra requirements on top of a LeRobot source (editable) install.
+# The core robotics stack (feetech SDK, pytorch-cuda, lerobot with its own deps)
+# is expected to be already installed. These are the packages this project
+# additionally relies on for the custom tools.
+
+pyav>=11.0.0            # video decode/encode backend (pyav, not torchcodec)
+opencv-python>=4.8.0    # image drawing in dataset_episode_viewer (cv2)
+numpy>=1.24
