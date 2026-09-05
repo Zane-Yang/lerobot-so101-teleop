@@ -18,7 +18,7 @@
 
 <p align="center">
   <img src="media/demo1.gif" alt="真机糖果抓取-放置演示" width="480"><br/>
-  <i>ACT 策略在真实机械臂上自主执行：抓取并放入（GIF 预览）</i>
+  <i>ACT 策略在真实机械臂上自主执行：抓取并放入（GIF 预览，2倍速）</i>
 </p>
 
 <details open>
