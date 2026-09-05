@@ -17,16 +17,19 @@
 ## 🎬 Demo
 
 <p align="center">
-  <img src="media/demo1.gif" alt="Real-robot candy pick-and-place demo" width="500" ><br/>
-  <i>Autonomous ACT inference on the real end-effector: pick & place (GIF preview，2x speed)</i>
+  <img src="media/demo1.gif" alt="Real-robot candy pick-and-place demo" width="480"><br/>
+  <i>Autonomous ACT inference on the real end-effector: pick & place (GIF preview)</i>
 </p>
 
 <details open>
 <summary>▶️ Play the full MP4 inline (HTML5 / GitHub)</summary>
 
-<video src="media/demo.mp4" controls width="500" autoplay loop muted playsinline></video>
+<video src="media/demo.mp4" controls width="480" autoplay loop muted playsinline></video>
 
 </details>
+
+> ✔️ `media/demo.mp4` is playable directly on this page — no download needed.
+> ✔️ `media/demo1.gif` is a lightweight animated preview for the repository cover.
 
 ---
 
@@ -36,15 +39,15 @@ A complete robotics **data-driven control loop on a real manipulator**, with **n
 
 ```
 ┌────────────┐   keyboard / gamepad    ┌──────────────────┐
-│  Operator  │ ──────────────────────▶ │ Teleoperation    │
-└────────────┘                         │ (leader-less)    │
-                                       └──────────────────┘
+│  Operator  │ ──────────────────────▶ │ Teleoperation     │
+└────────────┘                          │ (leader-less)     │
+                                        └──────────────────┘
                                                   │ actions
                                                   ▼
-┌────────────┐   states/images         ┌─────────────────────┐
-│  SO-101    │ ◀────────────────────── │ LeRobot pipeline    │
-│ follower   │ ──────────────────────▶ │ (record/train/eval) │
-└────────────┘   obs.images.front,     └─────────────────────┘
+┌────────────┐   states/images          ┌──────────────────┐
+│  SO-101    │ ◀────────────────────── │ LeRobot pipeline  │
+│ follower   │ ──────────────────────▶ │ (record/train/eval)│
+└────────────┘   obs.images.front,      └──────────────────┘
                  obs.state (6 joints)
 ```
 
@@ -130,7 +133,9 @@ bash scripts/rollout_eval.sh
 ```text
 .
 ├── README.md
-├── media/demo.mp4              # real-robot infer video
+├── media/
+│   ├── demo.mp4                 # real-robot infer video
+│   └── demo1.gif                # animated cover preview
 ├── docs/
 │   ├── ARCHITECTURE.md          # system design & teleop mapping details
 │   ├── PIPELINE.md               # pinned upstream + step-by-step reproduction
