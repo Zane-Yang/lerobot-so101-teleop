@@ -17,7 +17,7 @@
 ## 🎬 Demo
 
 <p align="center">
-  <img src="media/demo.gif" alt="Real-robot candy pick-and-place demo" width="500" ><br/>
+  <img src="media/demo1.gif" alt="Real-robot candy pick-and-place demo" width="500" ><br/>
   <i>Autonomous ACT inference on the real end-effector: pick & place (GIF preview)</i>
 </p>
 
