@@ -17,19 +17,16 @@
 ## 🎬 Demo
 
 <p align="center">
-  <img src="media/demo.gif" alt="Real-robot candy pick-and-place demo" width="480"><br/>
+  <img src="media/demo.gif" alt="Real-robot candy pick-and-place demo" width="500" ><br/>
   <i>Autonomous ACT inference on the real end-effector: pick & place (GIF preview)</i>
 </p>
 
 <details open>
 <summary>▶️ Play the full MP4 inline (HTML5 / GitHub)</summary>
 
-<video src="media/demo.mp4" controls width="480" autoplay loop muted playsinline></video>
+<video src="media/demo.mp4" controls width="500" autoplay loop muted playsinline></video>
 
 </details>
-
-> ✔️ `media/demo.mp4` is playable directly on this page — no download needed.
-> ✔️ `media/demo.gif` is a lightweight animated preview for the repository cover.
 
 ---
 
